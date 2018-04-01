@@ -1,0 +1,24 @@
+apiVersion: 0.1.0
+environments:
+  dev:
+    destination:
+      namespace: default
+      server: https://192.168.64.2:8443
+    k8sVersion: v1.7.0
+    path: dev
+kind: ksonnet.io/app
+name: docker-counter
+registries:
+  incubator:
+    gitVersion:
+      commitSha: 40285d8a14f1ac5787e405e1023cf0c07f6aa28c
+      refSpec: master
+    protocol: github
+    uri: github.com/ksonnet/parts/tree/master/incubator
+  zoidbergwill:
+    gitVersion:
+      commitSha: 40285d8a14f1ac5787e405e1023cf0c07f6aa28c
+      refSpec: master
+    protocol: github
+    uri: github.com/zoidbergwill/parts/tree/master/incubator
+version: 0.0.1
