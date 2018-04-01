@@ -7,6 +7,13 @@ environments:
     k8sVersion: v1.7.0
     path: dev
 kind: ksonnet.io/app
+libraries:
+  redis:
+    gitVersion:
+      commitSha: 40285d8a14f1ac5787e405e1023cf0c07f6aa28c
+      refSpec: master
+    name: redis
+    registry: incubator
 name: docker-counter
 registries:
   incubator:
